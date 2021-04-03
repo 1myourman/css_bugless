@@ -142,10 +142,6 @@ p {
 	margin-bottom: 24px;
 }
 
-.landing .button-group {
-	display: flex;
-}
-
 .landing .button-group .fill-button:first-child {
 	margin-right: 8px;
 }
