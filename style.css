@@ -64,6 +64,33 @@ p {
 	background-color: #ffffff;
 	color: #3040c4;
 }
+
+.info-category {
+	display: block;
+	color: #009b4d;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.5;
+	margin-bottom: 8px;
+}
+
+.info-title {
+	color: #2b292d;
+	font-size: 34px;
+	font-weight: 700;
+	line-height: 1.0588;
+	letter-spacing: 0.003em;
+	margin-bottom: 24px;
+}
+
+.info-description {
+	display: block;
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 400;
+	margin-bottom: 32px;
+}
+
 /* >= 768 px(Desktop) */
 @media screen and (min-width: 768px) {
 	/* Reset CSS */
@@ -89,22 +116,16 @@ p {
 	}
 }
 
-/* My code begins */
-
 /* Landing Section */
 .landing {
 	background-color: #fdded8;
 }
 
 .landing-contents {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	padding: 154px 0;
 	text-align: center;
 	background-color: #fdded8;
 	width: auto;
-	height: 100vh;
-	padding: 154px 15px;
 }
 
 .landing-contents h1 {
@@ -130,264 +151,174 @@ p {
 }
 
 /* Introduction Section */
-.Introduction {
+.introduction {
 	padding: 80px 0;
 	background-color: #f4f5f7;
 }
 
-.Introduction h2 {
-	text-align: left;
+.introduction h2 {
 	font-size: 22px;
 	line-height: 1.3636;
-	letter-spacing: 0.004em;
+	letter-spacing: -0.04em;
 	margin-bottom: 16px;
 }
 
-.Introduction .col-12:first-child {
+.introduction .col-12:first-child {
 	margin-bottom: 40px;
 }
 
 /* Program Section */
-.Program {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: auto;
-	height: auto;
-	padding: 80px 15px;
-	background-color: #ffffff;
+.program {
+	padding: 80px 0;
 }
-
-.Program .Program-header {
-	text-align: left;
-	margin-bottom: 32px;
-}
-
-.Program .Program-header span {
+.program-card {
 	display: block;
-	color: #009b4d;
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 1.5;
-	margin-bottom: 8px;
-}
-
-.Program .Program-header h1 {
-	color: #2b292d;
-	font-size: 34px;
-	font-weight: 700;
-	line-height: 1.0588;
-	letter-spacing: 0.003em;
-	margin-bottom: 24px;
-}
-
-.Program .Program-header p {
-	font-size: 16px;
-	line-height: 1.5;
-	font-weight: 400;
-}
-
-.Program .Studying-Options {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.Program .Studying-Options .fulltime-campus,
-.Program .Studying-Options .fulltime-remote,
-.Program .Studying-Options .parttime {
-	box-sizing: border-box;
-	padding-top: 24px;
-	padding-bottom: 32px;
+	width: 290px;
+	height: 291px;
+	padding: 24px 0px 32px;
+	text-align: center;
+	background-color: #ffffff;
 	border-radius: 8px;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
 		inset 0px 1px 0px rgba(255, 255, 255, 0.1);
 }
 
-.Program .Studying-Options .fulltime-campus img,
-.Program .Studying-Options .fulltime-remote img,
-.Program .Studying-Options .parttime img {
+.program-card:hover,
+.program-card:active {
+	background-color: #3141c5;
+	font-size: 20px;
+	letter-spacing: -0.02em;
+	line-height: 1.2;
+	color: #ffffff;
+}
+
+.program-card img {
 	display: block;
-	max-width: 100%;
+	width: auto;
 	height: 195px;
-	margin-bottom: 16px;
+	margin: 0 auto 16px;
 }
 
-.fulltime-campus img {
-	padding: 24px 73.79px 16px 74px;
-}
-.fulltime-remote img {
-	padding: 24px 73.94px 16px 70px;
-}
-.parttime img {
-	padding: 24px 83.6px 16px 84px;
-}
-
-.fulltime-campus p,
-.fulltime-remote p,
-.parttime p {
+.program-card p {
 	display: block;
-	text-align: center;
 	font-size: 18px;
 	font-weight: 700;
-	letter-spacing: 0.002em;
+	letter-spacing: -0.02em;
 	line-height: 1.3333;
 }
 
-/* Curriculum Section */
-.Curriculum {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 320px;
-	height: 100vh;
-	padding: 80px 15px;
+.program .col-md-4 {
+	margin-bottom: 20px;
 }
 
-.Curriculum .apply-guide {
-	text-align: left;
+.program .col-md-4:last-child {
+	margin-bottom: 0;
+}
+
+.program-card:hover p {
+	color: #ffffff;
+}
+
+/* Curriculum Section */
+.curriculum {
+	padding: 80px 0;
+}
+
+.apply-guide {
 	margin-bottom: 48px;
 }
 
-.Curriculum .apply-guide span {
-	display: block;
+.apply-guide .info-category {
 	color: #0189d1;
-	text-align: left;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 1.5;
-	letter-spacing: 0.001em;
-	margin-bottom: 8px;
 }
 
-.Curriculum .apply-guide h1 {
-	color: #2b292d;
-	font-size: 34px;
-	font-weight: 700;
-	line-height: 1.0588;
-	letter-spacing: 0.003em;
-	margin-bottom: 24px;
-}
-
-.Curriculum .apply-guide p {
-	color: #2b292d;
-	font-size: 16px;
-	line-height: 1.5;
-	letter-spacing: 0.001em;
-	font-weight: 400;
+.apply-guide .info-description {
 	margin-bottom: 32px;
 }
 
-.Curriculum .apply-guide button {
-	display: block;
-	padding: 12px 35px 12px 34px;
-	border: none;
-	background-color: #3040c4;
-	border-radius: 2px;
-	color: #ffffff;
-	text-align: center;
-	font-size: 15px;
-	font-weight: 700;
-	line-height: 1.6;
-	letter-spacing: 0.005em;
+.curriculum .row:first-child {
+	margin-bottom: 48px;
 }
-
-.Curriculum .curriculum-detail {
+.curriculum-detail {
 	font-size: 15px;
 	line-height: 1.4667;
-	letter-spacing: 0.001em;
-	margin-bottom: 80px;
+	letter-spacing: -0.01em;
 	font-weight: 400;
 	color: #2b292d;
-	text-align: left;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
-.projects {
+.curriculum-detail:first-child {
 	margin-bottom: 40px;
 }
 
-.curriculum-detail .projects p strong,
-.curriculum-detail .support p strong {
-	font-weight: 700;
-	color: #2b292d;
+.curriculum-support-img {
+	display: none;
 }
 
 /* Subscribe-information Section */
-.Subscribe-information {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+.subscribe-information {
 	background-color: #f2f8fa;
-	width: 320px;
-	height: 588px;
-	padding: 40px 15px;
+	padding: 40px 0;
 	border: none;
-	margin-bottom: 24px;
+	text-align: center;
 }
 
-.Subscribe-information img {
-	max-width: 290px;
-	width: 100%;
+.subscribe-img {
 	display: block;
-	padding: 25px 49.52px 25px 49px;
+	padding: 25px 0;
 	margin-bottom: 16px;
 }
 
-.Subscribe-information .subscribe-header {
+.subscribe-img img {
+	display: block;
+	width: auto;
+	height: 190px;
+	margin: 0 auto;
+}
+
+.subscribe-header {
+	color: #2b292d;
 	margin-bottom: 24px;
 }
 
-.Subscribe-information .subscribe-header h1 {
-	color: #2b292d;
+.subscribe-header h1 {
 	font-size: 32px;
 	font-weight: 700;
 	line-height: 1;
-	letter-spacing: 0.005em;
-	text-align: center;
+	letter-spacing: -0.05em;
 	margin-bottom: 16px;
 }
 
-.Subscribe-information .subscribe-header p {
-	color: #2b292d;
-	text-align: center;
-}
-
-.Subscribe-information .subscribe-form {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 290px;
-	height: 132px;
+.subscribe-form {
 	margin-bottom: 40px;
 }
 
-.Subscribe-information .subscribe-form input {
+.subscribe-form input {
 	display: block;
 	border: none;
-	width: 290px;
+	width: 100%;
 	height: 48px;
-	margin-bottom: 8px;
-	padding: 12px 156px 12px 16px;
-}
-
-.Subscribe-information .subscribe-form button {
-	display: block;
+	padding: 0 12px;
 	border-radius: 2px;
-	border: none;
-	width: 290px;
-	height: 48px;
-	background-color: #3040c4;
-	text-align: center;
-	color: #ffffff;
-	font-size: 15px;
-	font-weight: 700;
-	line-height: 1.6;
-	letter-spacing: 0.005em;
+	background-color: #ffffff;
 	margin-bottom: 8px;
 }
 
-.Subscribe-information .subscribe-form em {
+.subscribe-form .input-group {
+	margin-bottom: 8px;
+}
+
+.subscribe-form input:placeholder {
+	color: #7b7b7e;
+}
+
+.subscribe-form .fill-button {
+	width: 100%;
+}
+
+.subscribe-form em {
 	display: block;
 	width: 268px;
 	height: 20px;
@@ -396,10 +327,10 @@ p {
 	font-style: normal;
 	line-height: 1.5385;
 	font-weight: 400;
-	text-align: center;
+	margin-top: 8px;
 }
 
-.Subscribe-information .subscribe-form em a {
+.subscribe-form em a {
 	color: #3040c4;
 	text-decoration: underline;
 }
@@ -420,7 +351,7 @@ footer a {
 	font-size: 14;
 	font-weight: 400;
 	line-height: 1.714;
-	letter-spacing: 0.001em;
+	letter-spacing: -0.01em;
 	text-align: left;
 	margin-bottom: 8px;
 }
@@ -431,6 +362,28 @@ footer a:last-child {
 
 /* for Desktop */
 @media only screen and (min-width: 768px) {
+	/* common module */
+	.info-category {
+		text-align: center;
+		font-size: 22px;
+		line-height: 1.0909;
+		margin-bottom: 16px;
+	}
+
+	.info-title {
+		text-align: center;
+		font-size: 56px;
+		font-weight: 700;
+		line-height: 1;
+		margin-bottom: 32px;
+	}
+
+	.info-description {
+		text-align: center;
+		font-size: 22px;
+		line-height: 1.4545;
+	}
+
 	/* Landing */
 	.landing-contents {
 		height: auto;
@@ -452,77 +405,125 @@ footer a:last-child {
 	}
 
 	/* Introduction */
-	.Introduction h2 {
+	.introduction h2 {
 		font-size: 26px;
 		line-height: 1.3077;
 	}
 
-	.Introduction p {
+	.introduction p {
 		font-size: 22px;
 		line-height: 1.4545;
 		height: 96px;
 	}
 
-	.Introduction .col-12:first-child {
+	.introduction .col-12:first-child {
 		margin-bottom: 0;
 	}
 
 	/* Program (with images) */
-	.Program {
-		padding-top: 80px;
+	.program {
+		text-align: center;
 		padding-bottom: 96px;
-		background-color: #ffffff;
 	}
 
-	.Program .Program-header span {
-		text-align: center;
-		font-size: 22px;
-		line-height: 1.0909;
-		margin-bottom: 16px;
-	}
-
-	.Program .Program-header h1 {
-		text-align: center;
-		font-size: 56px;
-		font-weight: 700;
-		line-height: 1;
-		margin-bottom: 32px;
-	}
-
-	.Program .Program-header p {
-		text-align: center;
-		font-size: 22px;
-		line-height: 1.4545;
-	}
-
-	.Studying-Options {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-	}
-
-	.Studying-Options .fulltime-campus,
-	.Studying-Options .fulltime-remote,
-	.Studying-Options .parttime {
+	.program-card {
 		padding-bottom: 32px;
 	}
 
-	.fulltime-remote {
-		background-color: #3141c5;
+	.program-card p {
+		font-size: 20px;
+		letter-spacing: -0.02em;
+		line-height: 1.2;
 	}
 
-	.fulltime-remote p {
-		font-size: 20px;
-		letter-spacing: 0.002em;
-		line-height: 1.2;
-		color: #ffffff;
+	/* curriculum */
+	.apply-guide .info-category,
+	.apply-guide .info-title,
+	.apply-guide .info-description {
+		text-align: left;
 	}
 
-	.fulltime-campus p,
-	.parttime p {
-		font-size: 20px;
-		letter-spacing: 0.002em;
-		line-height: 1.2;
-		color: #2b292d;
+	.curriculum .info-description {
+		margin-bottom: 72px;
+	}
+
+	.curriculum-support-img {
+		display: block;
+	}
+
+	.curriculum-support-img img {
+		display: block;
+		width: 425px;
+		height: auto;
+	}
+
+	.curriculum-detail {
+		font-size: 18px;
+		letter-spacing: -0.01em;
+		line-height: 1.44444;
+	}
+
+	/* subscribe */
+	.subscribe-information {
+		padding: 80px 0;
+	}
+
+	.subscribe-header {
+		text-align: left;
+	}
+
+	.subscribe-img {
+		padding: 8px 0;
+	}
+
+	.subscribe-img img {
+		height: 285px;
+		margin-left: 0;
+	}
+
+	.subscribe-header h1 {
+		font-size: 40px;
+	}
+
+	.input-group {
+		display: flex;
+		align-items: center;
+		margin-bottom: 4px;
+	}
+
+	.input-group .fill-button {
+		flex-shrink: 0;
+		width: 160px;
+		margin-bottom: 0;
+	}
+
+	.input-group input {
+		height: 56px;
+		margin-right: 8px;
+		margin-bottom: 0;
+		font-size: 18px;
+		padding: 0 16px;
+	}
+
+	.input-group em {
+		font-size: 14px;
+		line-height: 1.7248;
+	}
+
+	/* footer */
+	footer {
+		flex-direction: row;
+	}
+
+	footer a:first-child {
+		margin: 16px 16px 16px;
+	}
+
+	footer a:nth-child(2) {
+		margin: 16px;
+	}
+
+	footer a:last-child {
+		margin: 16px 0 16px 16px;
 	}
 }
