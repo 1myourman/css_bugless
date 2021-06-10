@@ -47,6 +47,7 @@ p {
 .fill-button {
 	display: inline-flex;
 	justify-content: center;
+	width: 100%;
 	align-items: center;
 	height: 48px;
 	background-color: #3040c4;
