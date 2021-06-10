@@ -48,7 +48,7 @@ p {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	width: 140px;
+	width: 120px;
 	height: 48px;
 	background-color: #3040c4;
 	border: none;
@@ -91,31 +91,6 @@ p {
 	margin-bottom: 32px;
 }
 
-/* >= 768 px(Desktop) */
-@media screen and (min-width: 768px) {
-	/* Reset CSS */
-	p {
-		font-size: 22px;
-		line-height: 1.36;
-	}
-
-	.fill-button {
-		width: 160px;
-		height: 56px;
-		font-size: 18px;
-		font-weight: 700;
-		letter-spacing: -0.05em;
-		line-height: 1.5556;
-	}
-}
-
-/* Custom Grid System - fix max width of container */
-@media screen and (min-width: 1200px) {
-	.container {
-		max-width: 960px;
-	}
-}
-
 /* Landing Section */
 .landing {
 	background-color: #fdded8;
@@ -140,10 +115,6 @@ p {
 
 .landing-contents p {
 	margin-bottom: 24px;
-}
-
-.landing .button-group .fill-button:first-child {
-	margin-right: 8px;
 }
 
 /* Introduction Section */
@@ -348,8 +319,28 @@ footer a:last-child {
 	margin-bottom: 24px;
 }
 
+/* Custom Grid System - fix max width of container */
+@media screen and (min-width: 1200px) {
+	.container {
+		max-width: 960px;
+	}
+}
 /* for Desktop */
 @media only screen and (min-width: 768px) {
+	/* Reset CSS */
+	p {
+		font-size: 22px;
+		line-height: 1.36;
+	}
+
+	.fill-button {
+		width: 160px;
+		height: 56px;
+		font-size: 18px;
+		font-weight: 700;
+		letter-spacing: -0.05em;
+		line-height: 1.5556;
+	}
 	/* common module */
 	.info-category {
 		text-align: center;
