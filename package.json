@@ -1,0 +1,9 @@
+{
+	"homepage": "https://1myourman.github.io/responsive-website",
+	"scripts": {
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -b master -d build",
+		"start": "react-scripts start",
+		"build": "react-scripts build"
+	}
+}
