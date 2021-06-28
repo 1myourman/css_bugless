@@ -283,7 +283,7 @@ p {
 }
 
 .subscribe-form em {
-	display: block;
+	display: inline-block;
 	width: 268px;
 	height: 20px;
 	color: #7b7b7e;
@@ -492,6 +492,10 @@ footer a:last-child {
 	.input-group em {
 		font-size: 14px;
 		line-height: 1.7248;
+	}
+
+	.subscribe-form em {
+		display: block;
 	}
 
 	/* footer */
