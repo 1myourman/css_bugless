@@ -55,4 +55,4 @@ Still the image was too big, and I finally found that I also was giving all thos
 Five, grid system must be convenient one to use, but I still don't know how I can use and apply.
   
   <strong> Have more records in Notion : <a href=https://www.notion.so/Bugless-final-project-HTML-CSS-e815e0759b914db0b559d53f61369069>Project Notes in Notion</a> </strong> <br/>
-<br/>The original design by @rohjs, kimbug at goormedu(the course was offered via this platform)
+  <br/><em>The original design by <a href="https://github.com/rohjs">@rohjs</a>, kimbug at goormedu(the course was offered via this platform)</em>
